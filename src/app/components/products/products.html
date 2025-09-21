@@ -1,0 +1,8 @@
+<h1>{{ store.name }}</h1>
+<img [src]="store.logo" alt="Store Logo" width="150" />
+<p><strong>Client:</strong> {{ clientName }}</p>
+
+<h3>Branches:</h3>
+<ul>
+  <li *ngFor="let branch of store.branches">{{ branch }}</li>
+</ul>
